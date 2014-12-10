@@ -1,0 +1,73 @@
+.pictureGallery {
+    list-style-type: none;
+
+}
+
+.galleryItem {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    padding: 0px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.itemWrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.pictureWrapper {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.picture {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+.textWrapper {
+    float:right;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    /*background-color: #970435;*/
+    background: rgba(255,255,255, 0.5);
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250%;
+}
+
+.descriptionWrapper {
+    padding-top: 5px;
+    height:80%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    color: DimGray;
+    text-align: center;
+}
+.itemWrapper:hover > .textWrapper {
+    background-color: #970435;
+    color: white;
+}
+
+.itemWrapper:hover > .descriptionWrapper {
+    opacity: 1;
+}
+
+.itemWrapper:hover > .pictureWrapper {
+    opacity: 0.2;
+    -webkit-filter: blur(5px);
+}
+

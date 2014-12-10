@@ -1,0 +1,135 @@
+.mainWrapper {
+	font-family: Arial, Helvetica, sans-serif;	
+	font-size: medium;
+}
+
+.footWrapper {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+    background-color: #FFFFFF;
+}
+
+.footImage {
+    opacity: 0.6;
+}
+
+.bottomLine {
+    width: 100%;
+    height: 2px;
+    background-color: #970435;
+}
+
+.logoImage {
+    max-height: 40px;
+    max-width: 40px;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+.navImage {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    margin: 0 auto;
+    opacity: 0.6;
+    z-index: -1;
+}
+.navBarWrapper {
+    box-shadow: 0px 3px 5px 0px #DEDEDE;
+    border-bottom-style: solid;
+    border-bottom-color: #970438;
+    border-bottom-width: 1px;
+}
+.navWrapper { 
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    min-height: 100px;
+    z-index: 1;
+    /*background-color: #FFFFFF;*/
+    background: linear-gradient(gray, white);
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.85);
+}
+
+.navItem {
+    float:left;
+}
+
+
+.navLink {
+    display: block;
+    width: 80px;
+    padding: 15px;
+    color: gray;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #970435;
+}
+
+.contentWrapper { 
+    width: 70%;
+    height: 100%;
+    max-width: 1024px;
+    top: 150px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: -1;
+    color: gray;
+	padding-top: 10px;
+}
+
+.contentTitle {
+    color: #970435;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    visibility: hidden;
+}
+
+.contentMain {
+}
+
+.navWrapper:after {
+	content: "";
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background:linear-gradient(white, transparent);
+}
+
+.footWrapper:after {
+	content: "";
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	background:linear-gradient(transparent, white);
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.purple {
+    color: #970435;
+}
