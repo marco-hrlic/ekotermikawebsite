@@ -21,20 +21,21 @@ $(document).ready(function(){
 });
 
 changePage = function(newPage){
-        if(newPage==currentPage) return;
+    window.scrollTo(0,0);
+    if(newPage==currentPage) return;
 	var page="#line"+currentPage;
 	$(page).addClass("hidden");
-        $("#"+currentPage).removeClass("purple");
+    $("#"+currentPage).removeClass("purple");
 	currentPage=newPage;
 	page="#line"+currentPage;
 	$(page).removeClass("hidden").hide().fadeIn(200);
-        $("#"+currentPage).addClass("purple");
+    $("#"+currentPage).addClass("purple");
 	var naslov = currentPage;
 	if(naslov == "ONama") naslov="O Nama";
 	$("#naslov").text(naslov);
-        $.get("pages/" + currentPage + ".html", function(data) {
-              $(".contentMain").html(data).hide().fadeIn(400);
-        });
+    $.get("pages/" + currentPage + ".html", function(data) {
+        $(".contentMain").html(data).hide().fadeIn(400);
+    });
 }
 
 urlParam = function(name){

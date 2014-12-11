@@ -1,0 +1,39 @@
+.ekotermikaImage {
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    opacity: 1;
+    z-index: -2;
+}
+
+.ekotermikaImageBox {
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+    width: 632px;
+    height: 445px;
+    background: linear-gradient(to right, #E6E6E6, rgba(255,255,255,0) 50%);
+    
+}
+
+.ekotermikaText {
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.middle {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.ekotermikaBox {
+    padding: 5px;
+    position: absolute;
+    top: 125px;
+    left: 0;
+}
